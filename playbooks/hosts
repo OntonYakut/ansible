@@ -1,0 +1,7 @@
+[centos]
+188.0.190.208 
+#ansible_user=admin ansible_ssh_pass=Passwd02 
+
+
+[local]
+localhost ansible_connection=local

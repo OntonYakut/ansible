@@ -1,0 +1,5 @@
+ansible_ssh_user: admin
+ansible_ssh_pass: Passwd02
+ansible_become_pass: Passwd02
+ansible_become: yes
+ansible_become_user: root

@@ -1,0 +1,15 @@
+---
+- hosts: centos
+  sudo: yes
+  tasks:
+   - name: Install Nginx
+     yum: pkg=nginx state=absent
+     notify:
+         - NGINX start
+
+  handlers:
+    - name: NGINX start
+      service: name=nginx state=started
+
+
+ 

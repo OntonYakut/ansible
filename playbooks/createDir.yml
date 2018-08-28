@@ -1,0 +1,8 @@
+---
+- hosts: local
+  tasks:
+  - name: create folder
+    file:
+      path: ~/tomcat_test
+      mode: 0755
+      state: absent
